@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'burngeek';
+  src:  url('../fonts/burngeek.eot?5owo9l');
+  src:  url('../fonts/burngeek.eot?5owo9l#iefix') format('embedded-opentype'),
+    url('../fonts/burngeek.ttf?5owo9l') format('truetype'),
+    url('../fonts/burngeek.woff?5owo9l') format('woff'),
+    url('../fonts/burngeek.svg?5owo9l#burngeek') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="burn-"], [class*=" burn-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'burngeek' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.burn-close:before {
+  content: "\e5cd";
+}
+
+.burnpops
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+.btn-close
+{
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	border-radius: 50%;
+	width: 32px;
+	height: 32px;
+	background-color: white; 
+	border: 1px #333 solid;
+	line-height: 32px;
+	text-align: center;
+	cursor: pointer;
+}
+.btn-close:hover
+{
+	background-color: #555; 
+	color: #fff;
+}
+.burnup
+{
+	position: absolute;
+	margin: auto;
+	left: 0;
+	top: 0;
+	&:before
+	{
+		content:'';
+		width: 50px;
+		height: 50px;
+		background-color: red;
+	}
+}
+.burnup.active
+{
+	display: block;
+}
