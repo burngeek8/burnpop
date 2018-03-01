@@ -4,8 +4,10 @@ $(document).ready(function(){
 		derecha = 0,
 		arriba = 0,
 		src;
-
-	$("body").append(`<div class="burnpops"></div>`);					
+	if(flash.length > 1)
+	{
+		$("body").append(`<div class="burnpops"></div>`);					
+	}
 	for (var i = flash.length - 1; i >= 0; i--) {
 		src = $('.burnimg img:nth-child('+(i+1)+')').attr('src');	
 		$(".burnpops").append(`<div class="burnup">
