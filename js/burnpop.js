@@ -4,7 +4,7 @@ $(document).ready(function(){
 		derecha = 0,
 		arriba = 0,
 		src;
-	if(flash.length > 1)
+	if(flash.length > 0)
 	{
 		$("body").append(`<div class="burnpops"></div>`);					
 	}
